@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="不如  码农，程序猿，未来的昏析狮        Archives      Reading      About                      Nov 22 2013    hexo你的博客          号外号外：计数服务已开放，各种访问量统计仅两行代码：不蒜子，任你发挥的算子。一直纠结于哪里写博客，曾用过新浪博客，百度空间，JavaEye，LOFTER，OSC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Zhsp">
+<meta property="og:url" content="http://yoursite.com/2018/06/17/example-1/index.html">
+<meta property="og:site_name" content="Zhsp">
+<meta property="og:description" content="不如  码农，程序猿，未来的昏析狮        Archives      Reading      About                      Nov 22 2013    hexo你的博客          号外号外：计数服务已开放，各种访问量统计仅两行代码：不蒜子，任你发挥的算子。一直纠结于哪里写博客，曾用过新浪博客，百度空间，JavaEye，LOFTER，OSC">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://bruce.u.qiniudn.com/2013/11/22/hexo-your-blog/my-github-pages.jpg">
+<meta property="og:image" content="http://bruce.u.qiniudn.com/2013/11/22/hexo-your-blog/add-ssh-keys.jpg">
+<meta property="og:image" content="http://bruce.u.qiniudn.com/2014/12/firebase-counter.jpg">
+<meta property="og:updated_time" content="2018-06-17T13:01:16.440Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Zhsp">
+<meta name="twitter:description" content="不如  码农，程序猿，未来的昏析狮        Archives      Reading      About                      Nov 22 2013    hexo你的博客          号外号外：计数服务已开放，各种访问量统计仅两行代码：不蒜子，任你发挥的算子。一直纠结于哪里写博客，曾用过新浪博客，百度空间，JavaEye，LOFTER，OSC">
+<meta name="twitter:image" content="http://bruce.u.qiniudn.com/2013/11/22/hexo-your-blog/my-github-pages.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/06/17/example-1/"/>
+
+
+
+
+
+  <title> | Zhsp</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Zhsp</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/17/example-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhsp">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhsp">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-17T20:52:56+08:00">
+                2018-06-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <body><br>  <div class="wrapper"><br>    <header id="header"><div class="title"><br>  <h1><a href="/">不如</a></h1><br>  <p><a href="/">码农，程序猿，未来的昏析狮</a></p><br></div><br><!--
+<div>
+<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+ <input style="width:60px;background-color:transparent;text-align:center; border-width:0px;border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: none; "  type="search" name="q" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="s" />
+ <input type="hidden" name="q" value="site:ibruce.info">
+</form>
+</div>
+--><br><nav class="nav"><br>  <ul><br><br>      <li><a href="/archives">Archives</a></li><br><br>      <li><a href="/reading">Reading</a></li><br><br>      <li><a href="/about">About</a></li><br><br>  </ul><br>  <div class="clearfix"></div><br></nav><br><div class="clearfix"></div></header><br>    <div class="content"><article class="post"><br>  <header><br><br>      <div class="icon"></div><br>      <time datetime="2013-11-22T09:11:54.000Z"><a href="/2013/11/22/hexo-your-blog/">Nov 22 2013</a></time><br><br><br><br>    <h1 class="title">hexo你的博客</h1><br><br><br>  </header><br><br>  <div class="entry"><br><br>      <blockquote><br><p><strong>号外号外：计数服务已开放，各种访问量统计仅两行代码：<a href="http://service.ibruce.info" target="_blank" rel="external">不蒜子</a>，任你发挥的算子。</strong></p><br></blockquote><br><p>一直纠结于哪里写博客，曾用过新浪博客，百度空间，JavaEye，LOFTER，OSChina，cnblogs，CSDN，自搭WordPress，都不满意。再后来也弄过Jekyll和Octopress，觉累不爱。</p><br><p>直到多看了一眼hexo，这个逼格极高的程序猿写作方式，我喜欢。就连<em>hexo</em>的发音都像是<strong>黑客哦</strong>！如果你跟我一样纠结哪里写博，那就来到GitHub吧，让我们一起hexo！H人希绝对不会让你失望，相信很快hexo就会流行起来。</p><br><p>hexo出自台湾大学生<a href="http://twitter.com/tommy351" target="_blank" rel="external">tommy351</a>之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。hexo生成的静态网页可以直接放到GitHub Pages，BAE，SAE等平台上。先看看tommy是如何吐槽Octopress的 →＿→ <a href="http://zespia.tw/blog/2012/10/11/hexo-debut" target="_blank" rel="external">Hexo颯爽登場</a>。</p><br><blockquote><br><ul><br><li>如果你对默认配置满意，只需几个命令便可秒搭一个hexo。</li><br><li>如果你跟我一样喜欢折腾下，30分钟也足够个性化。</li><br><li>如果你过于喜欢折腾，可以折腾个把星期，尽情的玩。</li><br></ul><br></blockquote><br><p>搭建过程你或许觉得有那么点小繁琐，但一旦搭建完成，写文章是极简单，极舒服的。</p><br><p>只需要几个简单命令，你就可以完成一切。<br></p><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">hexo n <span class="comment">#写文章</span></div><div class="line">hexo g <span class="comment">#生成</span></div><div class="line">hexo d <span class="comment">#部署 # 可与hexo g合并为 hexo d -g</span></div></pre></td></tr></tbody></table></figure><p></p><br><a id="more"></a><br><!--
+先领略一下几个符合我审美观的hexo站点。
+--><br><p>下面逐步介绍，进入正题。</p><br><hr><br><h1 id="环境准备">环境准备</h1><p><strong>安装Node</strong><br>到<a href="http://nodejs.org" target="_blank" rel="external">Node.js</a>官网下载相应平台的<a href="http://nodejs.org/download" target="_blank" rel="external">最新版本</a>，一路安装即可。我用的是<a href="http://nodejs.org/dist/v0.10.22/node-v0.10.22-x86.msi" target="_blank" rel="external">node-v0.10.22-x86.msi</a></p><br><p><strong>安装Git</strong><br>Git的客户端很多，我用的是<a href="http://code.google.com/p/msysgit" target="_blank" rel="external">msysgit</a>，喜欢用绿色版本<a href="http://code.google.com/p/msysgit/downloads/detail?name=PortableGit-1.8.4-preview20130916.7z" target="_blank" rel="external">Portable application for official Git for Windows 1.8.4</a>，下载下来设置一下环境变量即可，Git_HOME，%Git_HOME%\bin之类的，不多说。</p><br><p><strong>安装Sublime（可选）</strong><br><a href="http://www.sublimetext.com" target="_blank" rel="external">Sublime Text 2</a>在这里仅仅作为一个文本编辑器使用，支持各种编程语言和文件格式，当然也支持Markdown语法，实在是个不可多得的练码奇才。喜欢追鲜的也可以尝试处于beta版本的<a href="http://www.sublimetext.com/3" target="_blank" rel="external">Sublime Text 3</a>。我用绿色版本<a href="http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.2.zip" target="_blank" rel="external">Portable Sublime Text 2.0.2.zip</a>。</p><br><blockquote><br><p>本屌是穷码畜，对于高大上的Mac码帅用户请移步：<a href="http://zespia.tw/hexo/docs/installation.html" target="_blank" rel="external">hexo installation</a><br><!-- [Mou Markdown editor](http://mouapp.com)--></p><br></blockquote><br><h1 id="GitHub">GitHub</h1><blockquote><br><p>GitHub账号和GitHub Pages 一般都应该有吧，已有的请自动无视这一部分。</p><br></blockquote><br><ul><br><li>首先注册一个『GitHub』帐号，已有的默认默认请忽略</li><br><li>建立与你用户名对应的仓库，仓库名必须为『your_user_name.github.com』</li><br><li>添加SSH公钥到『Account settings -&gt; SSH Keys -&gt; Add SSH Key』</li><br></ul><br><p><a href="http://bruce.u.qiniudn.com/2013/11/22/hexo-your-blog/my-github-pages.jpg" title="my GitHub Pages" class="fancybox" rel="noopener" target="_blank"><img src="http://bruce.u.qiniudn.com/2013/11/22/hexo-your-blog/my-github-pages.jpg" alt="my GitHub Pages"></a><span class="caption">my GitHub Pages</span></p><br><p>前两步忽略，只说第三步，<strong>添加SSH-Key</strong>。</p><br><p>首先设置你的用户名密码：<br></p><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">git config –global user.email <span class="string">“<a href="mailto:bu.ru@qq.com" target="_blank" rel="noopener">bu.ru@qq.com</a>“</span></div><div class="line">git config –global user.name <span class="string">“bruce-sha”</span></div></pre></td></tr></tbody></table></figure><p></p><br><p>生成密钥：<br></p><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">“<a href="mailto:bu.ru@qq.com" target="_blank" rel="noopener">bu.ru@qq.com</a>“</span></div></pre></td></tr></tbody></table></figure><p></p><br><p>输入文件路径：<br></p><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">H:\hexo\blog&gt;ssh-keygen -t rsa -C <span class="string">“<a href="mailto:bu.ru@qq.com" target="_blank" rel="noopener">bu.ru@qq.com</a>“</span></div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (//.ssh/id_rsa): H:\git\myssh\ssh</div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</div><div class="line">Enter same passphrase again:</div><div class="line">Your identification has been saved <span class="keyword">in</span> H:\git\myssh\ssh.</div><div class="line">Your public key has been saved <span class="keyword">in</span> H:\git\myssh\ssh.pub.</div><div class="line">The key fingerprint is:</div><div class="line">b0:0c:2e:67:33:ab:c1:50:10:40:0a:ba:c1:80:59:22 <a href="mailto:bu.ru@qq.com" target="_blank" rel="noopener">bu.ru@qq.com</a></div></pre></td></tr></tbody></table></figure><p></p><br><blockquote><br><p>有个bug，文件路径中的盘符H必须大写，否则会报错。</p><br></blockquote><br><p>上述命令若执行成功，会在<em>H:\git\myssh</em>目录下生成两个文件<em>id_rsa</em>和<em>id_rsa.pub</em>，最后两步：</p><br><ol><br><li>用文本编辑器打开<em>ssh.pub</em>文件，拷贝其中的内容，将其添加到<a href="http://github.com/settings/ssh" target="_blank" rel="external">Add SSH Key</a></li><br><li>将<em>id_rsa</em>和<em>id_rsa.pub</em>拷贝至你Git安装目录下的<em>.ssh</em>目录，如<em>H:\PortableGit-1.8.4.ssh</em></li><br></ol><br><p><a href="http://bruce.u.qiniudn.com/2013/11/22/hexo-your-blog/add-ssh-keys.jpg" title="Add SSH Keys" class="fancybox" rel="noopener" target="_blank"><img src="http://bruce.u.qiniudn.com/2013/11/22/hexo-your-blog/add-ssh-keys.jpg" alt="Add SSH Keys"></a><span class="caption">Add SSH Keys</span></p><br><p>最后可以验证一下：<br></p><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></div></pre></td></tr></tbody></table></figure><p></p><br><p>若有问题，请重新设置。常见错误请参考：<br><a href="http://help.github.com/articles/generating-ssh-keys" target="_blank" rel="external">GitHub Help - Generating SSH Keys</a><br><a href="http://help.github.com/articles/error-permission-denied-publickey" target="_blank" rel="external">GitHub Help - Error Permission denied (publickey)</a></p><br><h1 id="安装">安装</h1><p><em>Node</em>和<em>Git</em>都安装好后，可执行如下命令安装hexo：<br></p><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></tbody></table></figure><p></p><br><h1 id="初始化">初始化</h1><p>然后，执行init命令初始化hexo到你指定的目录：</p><br><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">hexo init &lt;folder&gt;</div></pre></td></tr></tbody></table></figure><br><blockquote><br><p>也可以cd到目标目录，执行<em>hexo init</em>。</p><br></blockquote><br><p>好啦，至此，全部安装工作已经完成！</p><br><h1 id="生成静态页面">生成静态页面</h1><p>cd 到你的init目录，执行如下命令，生成静态页面至<em>hexo\public\</em>目录。<br></p><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></tbody></table></figure><p></p><br><blockquote><br><p>命令必须在init目录下执行，否则不成功，但是也不报错。<br>当你修改文章Tag或内容，不能正确重新生成内容，可以删除<em>hexo\db.json</em>后重试，还不行就到<em>public</em>目录删除对应的文件，重新生成。</p><br></blockquote><br><h1 id="本地启动">本地启动</h1><p>执行如下命令，启动本地服务，进行文章预览调试。<br></p><figure class="highlight bash"><table><tbody><tr><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></tbody></table></figure><p></p><br><p>浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>就可以看到效果。</p><br><blockquote><br><p>请使用高级浏览器，否则可能…你懂的！</p><br></blockquote><br><h1 id="写文章">写文章</h1><p>执行new命令，生成指定名称的文章至<em>hexo\source_posts\postName.md</em>。<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">hexo new [layout] “postName” #新建文章</div></pre></td></tr></tbody></table></figure><p></p><br><p>其中layout是可选参数，默认值为post。有哪些layout呢，请到<em>scaffolds</em>目录下查看，这些文件名称就是layout名称。当然你可以添加自己的layout，方法就是添加一个文件即可，同时你也可以编辑现有的layout，比如post的layout默认是<em>hexo\scaffolds\post.md</em><br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">title: { { title } }</div><div class="line">date: { { date } }</div><div class="line">tags:</div><div class="line">—</div></pre></td></tr></tbody></table></figure><p></p><br><blockquote><br><p>请注意，大括号与大括号之间我多加了个空格，否则会被转义，不能正常显示。</p><br></blockquote><br><p>我想添加categories，以免每次手工输入，只需要修改这个文件添加一行，如下：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">title: { { title } }</div><div class="line">date: { { date } }</div><div class="line">categories: </div><div class="line">tags: </div><div class="line">—</div></pre></td></tr></tbody></table></figure><p></p><br><p>postName是md文件的名字，同时也出现在你文章的URL中，postName如果包含空格，必须用”将其包围，postName可以为中文。</p><br><blockquote><br><p>注意，所有文件：后面都必须有个空格，不然会报错。</p><br></blockquote><br><p>看一下刚才生成的文件<em>hexo\source_posts\postName.md</em>，内容如下：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中</div><div class="line">date: 2013-12-02 15:30:16 #文章生成时间，一般不改，当然也可以任意修改</div><div class="line">categories: #文章分类目录，可以为空，注意:后面有个空格</div><div class="line">tags: #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格</div><div class="line">—</div><div class="line">这里开始使用markdown格式输入你的正文。</div></pre></td></tr></tbody></table></figure><p></p><br><p>接下来，你就可以用喜爱的编辑器尽情书写你的文章。关于markdown语法，可以参考我的文章<a href="http://bruce-sha.github.io/2013/11/26/markdown/" target="_blank" rel="external">Markdown简明语法</a>。</p><br><p><strong>fancybox</strong><br>可能有人对这个<a href="http://bruce-sha.github.io/reading/" target="_blank" rel="external">Reading</a>页面中图片的<a href="http://fancyapps.com/fancybox/" target="_blank" rel="external">fancybox</a>效果感兴趣，这个是怎么做的呢。<br>很简单，只需要在你的文章<em>.md文件的头上添加<em>photos</em>项即可，然后一行行添加你要展示的照片：<br></em></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">layout: photo</div><div class="line">title: 我的阅历</div><div class="line">date: 2085-01-16 07:33:44</div><div class="line">tags: [hexo]</div><div class="line">photos:</div><div class="line">- <a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" target="_blank" rel="noopener">http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg</a></div><div class="line">- <a href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" target="_blank" rel="noopener">http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg</a></div></pre></td></tr></tbody></table></figure><p></p><br><blockquote><br><p>经过测试，文件头上的<em>layout: photo</em>可以省略。</p><br></blockquote><br><p>不想每次都手动添加怎么办？同样的，打开您的<em>hexo\scaffolds\photo.md</em><br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">layout: { { layout } }</div><div class="line">title: { { title } }</div><div class="line">date: { { date } }</div><div class="line">tags: </div><div class="line">photos: </div><div class="line">- </div><div class="line">—</div></pre></td></tr></tbody></table></figure><p></p><br><p>然后每次可以执行带layout的new命令生成照片文章：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">hexo new photo “photoPostName” #新建照片文章</div></pre></td></tr></tbody></table></figure><p></p><br><p><strong>description</strong><br>markdown文件头中也可以添加description，以覆盖全局配置文件中的description内容，请参考下文<em>_config.yml</em>的介绍。<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">title: hexo你的博客</div><div class="line">date: 2013-11-22 17:11:54</div><div class="line">categories: default</div><div class="line">tags: [hexo]</div><div class="line">description: 你对本页的描述</div><div class="line">—</div></pre></td></tr></tbody></table></figure><p></p><br><blockquote><br><p>hexo默认会处理全部markdown和html文件，如果不想让hexo处理你的文件，可以在文件头中加入layout: false。</p><br></blockquote><br><p><strong>文章摘要</strong><br>在需要显示摘要的地方添加如下代码即可：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">以上是摘要</div><div class="line">&lt;!–more–&gt;</div><div class="line">以下是余下全文</div></pre></td></tr></tbody></table></figure><p></p><br><p>more以上内容即是文章摘要，在主页显示，more以下内容点击『&gt; Read More』链接打开全文才显示。</p><br><blockquote><br><p>hexo中所有文件的编码格式均是UTF-8。</p><br></blockquote><br><h1 id="主题安装">主题安装</h1><p>萝卜白菜各有所爱，玩博客换主题是必不可少的，hexo的主题列表<a href="http://github.com/tommy351/hexo/wiki/Themes" target="_blank" rel="external">Hexo Themes</a>。<br>我比较喜欢<a href="http://github.com/A-limon/pacman" target="_blank" rel="external">pacman</a>，<a href="http://github.com/heroicyang/hexo-theme-modernist" target="_blank" rel="external">modernist</a>、<a href="http://github.com/DavidKk/Hexo.ishgo" target="_blank" rel="external">ishgo</a>，<a href="http://github.com/raytaylorlin/hexo-theme-raytaylorism" target="_blank" rel="external">raytaylorism</a>。<em>Pacman</em>最为优秀，简洁大方小清新，同时移动版本支持的也很好，但作者并没有把很多参数分离出来给出可配置项，我最终选择了<em>modernist</em>。</p><br><p>安装主题的方法就是一句git命令：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">git clone <a href="https://github.com/heroicyang/hexo-theme-modernist.git" target="_blank" rel="noopener">https://github.com/heroicyang/hexo-theme-modernist.git</a> themes/modernist</div></pre></td></tr></tbody></table></figure><p></p><br><blockquote><br><p>目录是否是modernist无所谓，只要与_config.yml文件一致即可。</p><br></blockquote><br><p>安装完成后，打开<em>hexo_config.yml</em>，修改主题为<em>modernist</em><br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">theme: modernist</div></pre></td></tr></tbody></table></figure><p></p><br><p>打开<em>hexo\themes\modernist</em>目录，编辑主题配置文件<em>_config.yml</em>：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">menu: #配置页头显示哪些菜单</div><div class="line">#  Home: /</div><div class="line">  Archives: /archives</div><div class="line">  Reading: /reading</div><div class="line">  About: /about</div><div class="line">#  Guestbook: /about</div><div class="line"></div><div class="line">excerpt_link: Read More #摘要链接文字</div><div class="line">archive_yearly: false #按年存档</div><div class="line"></div><div class="line">widgets: #配置页脚显示哪些小挂件</div><div class="line">  - category</div><div class="line">#  - tag</div><div class="line">  - tagcloud</div><div class="line">  - recent_posts</div><div class="line">#  - blogroll</div><div class="line"></div><div class="line">blogrolls: #友情链接</div><div class="line">  - bruce sha’s duapp wordpress: <a href="http://ibruce.duapp.com" target="_blank" rel="noopener">http://ibruce.duapp.com</a></div><div class="line">  - bruce sha’s javaeye: <a href="http://buru.iteye.com" target="_blank" rel="noopener">http://buru.iteye.com</a></div><div class="line">  - bruce sha’s oschina blog: <a href="http://my.oschina.net/buru" target="_blank" rel="noopener">http://my.oschina.net/buru</a></div><div class="line">  - bruce sha’s baidu space: <a href="http://hi.baidu.com/iburu" target="_blank" rel="noopener">http://hi.baidu.com/iburu</a></div><div class="line"></div><div class="line">fancybox: true #是否开启fancybox效果</div><div class="line"></div><div class="line">duoshuo_shortname: buru #多说账号</div><div class="line"></div><div class="line">google_analytics:</div><div class="line">rss:</div></pre></td></tr></tbody></table></figure><p></p><br><p>更新主题<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">cd themes/modernist</div><div class="line">git pull</div></pre></td></tr></tbody></table></figure><p></p><br><h1 id="评论框">评论框</h1><p>静态博客要使用第三方评论系统，hexo默认集成的是<a href="http://disqus.com" target="_blank" rel="external">Disqus</a>，因为你懂的，所以国内的话还是建议用<a href="http://duoshuo.com" target="_blank" rel="external">多说</a>。<br>直接用你的微博/豆瓣/人人/百度/开心网帐号登录多说，做一下基本设置。如果使用modernist主题，在<em>modernist_config.yml</em>中配置duoshuo_shortname为多说的<strong>基本设置-&gt;域名</strong>中的shortname即可。你也可以在多说后台自定义一下多说评论框的格式，比如评论框的位置，对于css设置，可以<a href="http://dev.duoshuo.com/docs/4ff1cfd0397309552c000017" target="_blank" rel="external">参考这里</a>，我是在<a href="http://gist.github.com/heroicyang/5644407" target="_blank" rel="external">HeroicYang</a>的基础上修改的。</p><br><p>如果你是有的其他第三方评论系统，将通用代码粘贴到<em>hexo\themes\modernist\layout_partial\comment.ejs</em>里面，如下：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">&lt;% if (config.disqus_shortname &amp;&amp; page.comments){ %&gt;</div><div class="line">&lt;section id=”comment”&gt;</div><div class="line">  #你的通用代码</div><div class="line">&lt;% } %&gt;</div></pre></td></tr></tbody></table></figure><p></p><br><h1 id="自定义页面">自定义页面</h1><p>执行new page命令<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">hexo new page “about”</div></pre></td></tr></tbody></table></figure><p></p><br><p>在<em>hexo\source\</em>下会生成<em>about</em>目录，里面有个index.md，直接编辑就可以了，然后在主题的<em>_config.yml</em>中将其配置显示出来。<br>上述步骤，也可以手工生成，在<em>hexo\source\</em>下手工新建<em>about</em>和<em>index.md</em>也是完全等价的。</p><br><blockquote><br><p>因为markdown对table的支持不好，我是在about中直接建立index.html，里面书写页面内容，hexo会帮你加上头和尾。</p><br></blockquote><br><h1 id="404页面">404页面</h1><p>GitHub Pages <a href="http://help.github.com/articles/custom-404-pages" target="_blank" rel="external">自定义404页面</a>非常容易，直接在根目录下创建自己的<strong>404.html</strong>就可以。但是自定义404页面仅对绑定顶级域名的项目才起作用，GitHub默认分配的二级域名是不起作用的，使用<em>hexo server</em>在本机调试也是不起作用的。<br>其实，404页面可以做更多有意义的事，来做个404公益项目吧。现在，看下我的404页面<a href="http://ibruce.info/nothing" target="_blank" rel="noopener">一个ibruce.info上不存在的页面</a>，做点有意义的事情，也对得起这个域名。<br>目前有如下几个公益404接入地址，我选择了腾讯的。404页面，每个人可以做的更多。</p><br><ul><br><li><a href="http://www.qq.com/404" target="_blank" rel="external">腾讯公益404</a></li><br><li><a href="http://yibo.iyiyun.com/Index/web404" target="_blank" rel="external">404公益_益云(公益互联网)社会创新中心</a></li><br><li><a href="http://404page.missingkids.org.tw" target="_blank" rel="external">失蹤兒童少年資料管理中心404</a></li><br></ul><br><h1 id="图床">图床</h1><p>考虑到博客的速度，同时也为了便于博客的迁移，图床是必须的。我墙裂推荐七牛，访问速度极快，支持日志、防盗链和水印。</p><br><p>免费用户有每月10GB流量+总空间10GB+PUT/DELETE 10万次请求+GET 100万次请求，这对个人博客来说足够，不够的话点这个<a href="">活动页面</a>，也可通过邀请好友获得奖励，我也求一下<a href="http://portal.qiniu.com/signup?code=3lqr4z3p7clea" target="_blank" rel="external">七牛邀请</a>。有一点要说明的是，七牛没有目录的概念，但是文件名可以包含<em>/</em>，比如<em>2013/11/27/reading/photos-0.jpg</em>，参考这里<a href="http://kb.qiniu.com/key-value-system" target="_blank" rel="external">关于key-value存储系统</a>。</p><br><p>七牛除了作为图床还可以作为其他静态文件存储空间，比如我的个人站点首页有个字库文件和JS文件下载较慢，有时间会把它弄到七牛上去，以提高首页打开速度。请看这篇<a href="http://linux.cn/thread/11986/1/1" target="_blank" rel="external">Linux中国采用七牛云存储支撑图片访问</a>。</p><br><p>如果非要说不足的话，就是文件管理界面不是很友好，不支持CNAME到分配的永久链接，也不能绑定未备案的自有域名，必须备案才可以。</p><br><blockquote><br><p>如果你对七牛web版的文件管理界面不满意，可以用官方的<a href="http://docs.qiniu.com/tools/v6/index.html" target="_blank" rel="external">七牛云存储工具</a>。</p><br></blockquote><br><p>您还可以使用如下图床服务 <a href="http://www.farbox.com" target="_blank" rel="external">FarBox</a>，<a href="http://www.dropbox.com" target="_blank" rel="external">Dropbox</a>，<a href="http://www.upyun.com" target="_blank" rel="external">又拍云</a>。</p><br><!--
+    参考这篇 利用dropbox免费网盘打造稳定外链图床 http://www.dengping.org/free-dropbox-share-links.html
+--><br><h1 id="申请域名（可选）">申请域名（可选）</h1><p>GitHubPages默认为每个用户分配了一个二级域名『your_user_name.github.com』或『your_user_name.github.io』。<br>如果你对上述域名不满意，可以到<a href="http://www.godaddy.com" target="_blank" rel="external">狗爹</a>上申请一个自己的域名，然后绑定到GitHub Pages。绑定方法很简单，在repo根目录下建立一个CNAME文件，里面写上域名即可。</p><br><p><strong>GoDaddy</strong><br>买域名首选狗爹，国内的服务商大家都懂的。<br>目前.info域名只要￥18.99，但据说续费比较贵，我是先玩下，一年后再换，至于搜索引擎重新索引之类的，无所谓。.me和.com域名稍微贵点，大约￥60-100，网上有很多优惠码可用，可惜有的优惠码有限制。比如有个.com域名优惠码只要$1.99，但只能用国外信用卡购买。更多优惠码可以自行谷歌或到<a href="http://www.dute.me" target="_blank" rel="external">独特优惠码</a>找。不着急的同学可以将中意的域名加入购物车先不付款，过几天，狗爹就会发优惠信息给你。狗爹不定期也会有活动，可以多关注。<br>付款后，需要稍微等一会你才会拿到域名，特别是支付宝付款的，要等大约半小时左右。此外域名要一年年的买，这样比较划算。</p><br><blockquote><br><p>建议大家申请.com或.me域名。据说.info因垃圾网站太多，被搜索引擎惩罚，而且续费较贵。</p><br></blockquote><br><p><strong>DNSPod</strong><br>GoDaddy的NameServers有时会被墙，因此墙裂推荐国内的<a href="http://www.dnspod.cn" target="_blank" rel="external">DNSPod</a>解析域名，免费服务真心不错。支持微信/邮件提醒，监控与报警，访问统计，健康诊断，搜索引擎推送，速度哇哇的，对于我来说足够。<br>两步设置就可以搞定，怎么操作参考<a href="http://support.dnspod.cn/Kb/showarticle/tsid/42" target="_blank" rel="external">Godaddy注册商域名修改DNS地址</a>。</p><br><h1 id="命令">命令</h1><p><strong>常用命令：</strong><br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">hexo new “postName” #新建文章</div><div class="line">hexo new page “pageName” #新建页面</div><div class="line">hexo generate #生成静态页面至public目录</div><div class="line">hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</div><div class="line">hexo deploy #将.deploy目录部署到GitHub</div></pre></td></tr></tbody></table></figure><p></p><br><p><strong>常用复合命令：</strong><br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">hexo deploy -g</div><div class="line">hexo server -g</div></pre></td></tr></tbody></table></figure><p></p><br><p><strong>简写：</strong><br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">hexo n == hexo new</div><div class="line">hexo g == hexo generate</div><div class="line">hexo s == hexo server</div><div class="line">hexo d == hexo deploy</div></pre></td></tr></tbody></table></figure><p></p><br><hr><br><h2 id="##至此，基本操作介绍完毕，以下内容普通用户无需了解。">##至此，基本操作介绍完毕，以下内容普通用户无需了解。</h2><h1 id="目录介绍">目录介绍</h1><p>默认目录结构：</p><br><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">.</div><div class="line">├── .deploy</div><div class="line">├── public</div><div class="line">├── scaffolds</div><div class="line">├── scripts</div><div class="line">├── source</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">├── themes</div><div class="line">├── _config.yml</div><div class="line">└── package.json</div></pre></td></tr></tbody></table></figure><br><ul><br><li>.deploy：执行hexo deploy命令部署到GitHub上的内容目录</li><br><li>public：执行hexo generate命令，输出的静态网页内容目录</li><br><li>scaffolds：layout模板文件目录，其中的md文件可以添加编辑</li><br><li>scripts：扩展脚本目录，这里可以自定义一些javascript脚本</li><br><li>source：文章源码目录，该目录下的markdown和html文件均会被hexo处理。该页面对应repo的根目录，404文件、favicon.ico文件，CNAME文件等都应该放这里，该目录下可新建页面目录。<ul><br><li>_drafts：草稿文章</li><br><li>_posts：发布文章</li><br></ul><br></li><br><li>themes：主题文件目录</li><br><li>_config.yml：全局配置文件，大多数的设置都在这里</li><br><li>package.json：应用程序数据，指明hexo的版本等信息，类似于一般软件中的<em>关于</em>按钮</li><br></ul><br><p>接下来是重头戏<em>_config.yml</em>，做个简单说明：</p><br><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line"># Hexo Configuration</div><div class="line">## Docs: <a href="http://zespia.tw/hexo/docs/configure.html" target="_blank" rel="noopener">http://zespia.tw/hexo/docs/configure.html</a></div><div class="line">## Source: <a href="https://github.com/tommy351/hexo/" target="_blank" rel="noopener">https://github.com/tommy351/hexo/</a></div><div class="line"></div><div class="line"># Site #整站的基本信息</div><div class="line">title: 不如 #网站标题</div><div class="line">subtitle: 码农，程序猿，未来的昏析师 #网站副标题</div><div class="line">description: bruce sha’s blog | java | scala | bi #网站描述，给搜索引擎用的，在生成html中的head-&gt;meta中可看到</div><div class="line">author: bruce #网站作者，在下方显示</div><div class="line">email: <a href="mailto:bu.ru@qq.com" target="_blank" rel="noopener">bu.ru@qq.com</a> #联系邮箱</div><div class="line">language: zh-CN #语言</div><div class="line"></div><div class="line"># URL #域名和文件结构</div><div class="line">## If your site is put in a subdirectory, set url as ‘<a href="http://yoursite.com/child&#39;">http://yoursite.com/child&#39;</a> and root as ‘/child/‘</div><div class="line">url: <a href="http://ibruce.info" target="_blank" rel="noopener">http://ibruce.info</a> #你的域名</div><div class="line">root: /</div><div class="line">permalink: :year/:month/:day/:title/</div><div class="line">tag_dir: tags</div><div class="line">archive_dir: archives</div><div class="line">category_dir: categories</div><div class="line">code_dir: downloads/code</div><div class="line"></div><div class="line"># Writing #写文章选项</div><div class="line">new_post_name: :title.md # File name of new posts</div><div class="line">default_layout: post #默认layout方式</div><div class="line">auto_spacing: false # Add spaces between asian characters and western characters</div><div class="line">titlecase: false # Transform title into titlecase</div><div class="line">external_link: true # Open external links in new tab</div><div class="line">max_open_file: 100</div><div class="line">multi_thread: true</div><div class="line">filename_case: 0</div><div class="line">render_drafts: false</div><div class="line">highlight: #代码高亮</div><div class="line">  enable: true #是否启用</div><div class="line">  line_number: false #是否显示行号</div><div class="line">  tab_replace:</div><div class="line"></div><div class="line"># Category &amp; Tag #分类与标签</div><div class="line">default_category: uncategorized # default</div><div class="line">category_map:</div><div class="line">tag_map:</div><div class="line"></div><div class="line"># Archives #存档，这里的说明好像不对。全部选择1，这个选项与主题中的选项有时候会有冲突</div><div class="line">## 2: Enable pagination</div><div class="line">## 1: Disable pagination</div><div class="line">## 0: Fully Disable</div><div class="line">archive: 1</div><div class="line">category: 1</div><div class="line">tag: 1</div><div class="line"></div><div class="line"># Server #本地服务参数</div><div class="line">## Hexo uses Connect as a server</div><div class="line">## You can customize the logger format as defined in</div><div class="line">## <a href="http://www.senchalabs.org/connect/logger.html" target="_blank" rel="noopener">http://www.senchalabs.org/connect/logger.html</a></div><div class="line">port: 4000</div><div class="line">logger: true</div><div class="line">logger_format:</div><div class="line"></div><div class="line"># Date / Time format #日期显示格式</div><div class="line">## Hexo uses Moment.js to parse and display date</div><div class="line">## You can customize the date format as defined in</div><div class="line">## <a href="http://momentjs.com/docs/#/displaying/format/" target="_blank" rel="noopener">http://momentjs.com/docs/#/displaying/format/</a></div><div class="line">date_format: MMM D YYYY</div><div class="line">time_format: H:mm:ss</div><div class="line"></div><div class="line"># Pagination #分页设置</div><div class="line">## Set per_page to 0 to disable pagination</div><div class="line">per_page: 10 #每页10篇文章</div><div class="line">pagination_dir: page</div><div class="line"></div><div class="line"># Disqus #社会化评论disqus，我使用多说，在主题中配置</div><div class="line">disqus_shortname:</div><div class="line"></div><div class="line"># Extensions #插件，暂时未安装插件</div><div class="line">## Plugins: <a href="https://github.com/tommy351/hexo/wiki/Plugins" target="_blank" rel="noopener">https://github.com/tommy351/hexo/wiki/Plugins</a></div><div class="line">## Themes: <a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank" rel="noopener">https://github.com/tommy351/hexo/wiki/Themes</a></div><div class="line">## 主题</div><div class="line">theme: modernist # raytaylorism # pacman # modernist # light</div><div class="line">exclude_generator:</div><div class="line"></div><div class="line"># Deployment #部署</div><div class="line">## Docs: <a href="http://zespia.tw/hexo/docs/deploy.html" target="_blank" rel="noopener">http://zespia.tw/hexo/docs/deploy.html</a></div><div class="line">deploy:</div><div class="line">  type: github</div><div class="line">  repository: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:bruce-sha/bruce-sha.github.com.git #你的GitHub Pages仓库</div></pre></td></tr></tbody></table></figure><br><h1 id="修改局部页面">修改局部页面</h1><p>页面展现的全部逻辑都在每个主题中控制，源代码在<em>hexo\themes\你使用的主题\</em>中，以<em>modernist</em>主题为例：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">.</div><div class="line">├── languages          #多语言</div><div class="line">|   ├── default.yml    #默认语言</div><div class="line">|   └── zh-CN.yml      #中文语言</div><div class="line">├── layout             #布局，根目录下的.ejs文件是对主页，分页，存档等的控制</div><div class="line">|   ├── _partial       #局部的布局，此目录下的<em>.ejs是对头尾等局部的控制</em></div><div class="line">|   └── _widget        #小挂件的布局，页面下方小挂件的控制</div><div class="line">├── source             #源码</div><div class="line">|   ├── css            #css源码 </div><div class="line">|   |   ├── _base      #.styl基础css</div><div class="line">|   |   ├── _partial   #<em>.styl局部css</em></div><div class="line">|   |   ├── fonts      #字体</div><div class="line">|   |   ├── images     #图片</div><div class="line">|   |   └── style.styl #.styl引入需要的css源码</div><div class="line">|   ├── fancybox       #fancybox效果源码</div><div class="line">|   └── js             #javascript源代码</div><div class="line">├── _config.yml        #主题配置文件</div><div class="line">└── README.md          #用GitHub的都知道</div></pre></td></tr></tbody></table></figure><p></p><br><p>如果你需要修改头部，直接修改<em>hexo\themes\modernist\layout_partial\header.ejs</em>，比如头上加个搜索框：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">&lt;div&gt;</div><div class="line">&lt;form class=”search” action=”//google.com/search” method=”get” accept-charset=”utf-8”&gt;</div><div class="line"> &lt;input type=”search” name=”q” id=”search” autocomplete=”off” autocorrect=”off” autocapitalize=”off” maxlength=”20” placeholder=”Search” /&gt;</div><div class="line"> &lt;input type=”hidden” name=”q” value=”site:&lt;%- config.url.replace(/^https?:\/\//, ‘’) %&gt;”&gt;</div><div class="line">&lt;/form&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></tbody></table></figure><p></p><br><p>将如上代码加入即可，您需要修改css以便这个搜索框比较美观。</p><br><p>再如，你要修改页脚版权信息，直接编辑<em>hexo\themes\modernist\layout_partial\footer.ejs</em>。同理，你需要修改css，直接去修改对应位置的styl文件。</p><br><h1 id="统计">统计</h1><blockquote><br><p>页面上显示访问次数可以使用 <a href="http://busuanzi.ibruce.info" target="_blank" rel="external">不蒜子</a>，两行代码即可搞定。</p><br></blockquote><br><p>因Google Analytics偶尔被墙，故用百度统计，以<em>modernist</em>主题为例，介绍如何添加。<br>编辑文件<em>hexo\themes\modernist_config.yml</em>，增加配置选项：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">baidu_tongji: true</div></pre></td></tr></tbody></table></figure><p></p><br><p>新建文件<em>hexo\themes\modernist\layout_partial\baidu_tongji.ejs</em>，内容如下：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">&lt;% if (theme.baidu_tongji){ %&gt;</div><div class="line">&lt;script type=”text/javascript”&gt;</div><div class="line">#你的百度统计代码</div><div class="line">&lt;/script&gt;</div><div class="line">&lt;% } %&gt;</div></pre></td></tr></tbody></table></figure><p></p><br><blockquote><br><p>注册并登录百度统计获取你的统计代码。</p><br></blockquote><br><p>编辑文件<em>hexo\themes\modernist\layout_partial\head.ejs</em>，在<em>『/head』</em>之前增加：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">&lt;%- partial(‘baidu_tongji’) %&gt;</div></pre></td></tr></tbody></table></figure><p></p><br><p>重新生成并部署你的站点。</p><br><blockquote><br><p>不出意外的话，在你的站点的每个页面的左上角都会看到一个恶心的百度LOGO。你只能在『百度统计首页-&gt;网站列表-&gt;获取代码-&gt;系统管理设置-&gt;统计图标设置-&gt;显示图标』，把那个勾去掉。百度真是恶心，我准备还是用Google Analytics。</p><br></blockquote><br><h1 id="分享">分享</h1><p>我没有添加分享，觉得这个不是很必要，导致页面看起来啰嗦。以加网为例介绍如何添加：</p><br><ul><br><li>在<em>hexo\themes\modernist\layout_partial\post</em>下新建<em>jiathis.ejs</em>文件。</li><br><li>注册加网获得你的分享代码，写入<em>jiathis.ejs</em>。</li><br><li>在<em>hexo\themes\modernist\layout_partial\article.ejs</em>中，添加<em>&lt;%-partial(‘post/jiathis’)%&gt;</em>。</li><br></ul><br><p>分享服务还可以使用如下企业提供的技术<a href="http://www.jiathis.com" target="_blank" rel="external">加网</a>，<a href="http://www.bshare.cn" target="_blank" rel="external">bShare</a>，<a href="http://share.baidu.com" target="_blank" rel="external">百度分享</a>。</p><br><h1 id="网站图标">网站图标</h1><p>看一下<em>hexo\themes\modernist\layout_partial\head.ejs</em>，找到这句：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">&lt;link rel=”icon” type=”image/x-icon” href=”&lt;%- config.root %&gt;favicon.ico”&gt;</div></pre></td></tr></tbody></table></figure><p></p><br><p>你懂的，将你的<em>favicon.ico</em>放到工程根目录下即可，也就是<em>hexo\source</em>目录。可以在<a href="http://www.faviconer.com/" target="_blank" rel="external">Faviconer</a>制作你的ico图标，国内有<a href="http://www.bitbug.net/" target="_blank" rel="external">比特虫</a>。</p><br><h1 id="自定义挂件">自定义挂件</h1><p>除了默认已提供的挂件外，你还可以自定义自己的小挂件，在<em>hexo\themes\modernist\layout_widget\</em>下，新建自己的ejs文件，如<em>myWidget.ejs</em>，然后在配置文件<em>hexo\themes\modernist_config.yml</em>中配置。<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">widgets:</div><div class="line">  - myWidget</div></pre></td></tr></tbody></table></figure><p></p><br><p>用上述方法可以添加新浪微博小挂件。</p><br><ul><br><li>生成自己的<a href="http://open.weibo.com/widgets?cat=wb" target="_blank" rel="external">微博组件</a>。</li><br><li>添加<em>hexo\themes\modernist\layout_widget\weibo.ejs</em>文件。</li><br><li>配置<em>hexo\themes\modernist_config.yml</em>。</li><br></ul><br><h1 id="插件">插件</h1><p>安装插件：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">npm install &lt;plugin-name&gt; –save</div></pre></td></tr></tbody></table></figure><p></p><br><p>启用插件：在*hexo_config.yml文件添加：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">plugins:</div><div class="line">- &lt;plugin-name&gt;  #插件名</div></pre></td></tr></tbody></table></figure><p></p><br><p>升级插件：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">npm update</div></pre></td></tr></tbody></table></figure><p></p><br><p>卸载插件：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">npm uninstall &lt;plugin-name&gt;</div></pre></td></tr></tbody></table></figure><p></p><br><p><strong>RSS插件</strong><br>将上述命令中的<em>『plugin-name』</em>，替换为<em>hexo-generator-feed</em>。一旦安装完成，你可以在配置显示你站点的RSS，文件路径<em>\atom.xml</em>。</p><br><p>你可以用rss作为迁移工具，用如下命令读取其他位置的rss：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">hexo migrate rss &lt;source&gt;</div></pre></td></tr></tbody></table></figure><p></p><br><blockquote><br><p><em>『source』</em>是本地或网络文件路径。</p><br></blockquote><br><p><strong>Sitemap插件</strong><br>将上述命令中的<em>『plugin-name』</em>，替换为<em>hexo-generator-sitemap</em>。你可以将你站点地图提交给搜索引擎，文件路径<em>\sitemap.xml</em>。</p><br><p>更多插件的安装方法，请参考<a href="http://github.com/tommy351/hexo/wiki/Plugins" target="_blank" rel="external">官方Wiki</a>。</p><br><blockquote><br><p>如果你按照上述步骤做，但插件不起作用，没有生成atom.xml和sitemap.xml，也没有报错，那么你应该cd到你的hexo初始化目录，在该目录下重新安装插件，重试。</p><br></blockquote><br><h1 id="迁移">迁移</h1><p>hexo支持从其他类型站点迁移，如通用RSS，Jekyll，Octopress，WordPress等，这一部分我没试过。请参考官方文档<a href="http://zespia.tw/hexo/docs/migration.html" target="_blank" rel="external">Hexo Migration</a>。</p><br><h1 id="搜索引擎">搜索引擎</h1><p>你可以到<a href="http://www.sousuoyinqingtijiao.com" target="_blank" rel="external">屈站长</a>提交你的站点给搜索引擎。其他内容如添加站点或页面的description，提交Sitemap，添加百度统计，Google Analytics等等，参考本文其他章节的内容，不再一一阐述。</p><br><h1 id="更新">更新</h1><p>更新hexo：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">npm update -g hexo</div></pre></td></tr></tbody></table></figure><p></p><br><p>更新主题：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">cd themes/你的主题</div><div class="line">git pull</div></pre></td></tr></tbody></table></figure><p></p><br><p>更新插件：<br></p><figure class="highlight plain"><table><tbody><tr><td class="code"><pre><div class="line">npm update</div></pre></td></tr></tbody></table></figure><p></p><br><h1 id="干掉IE">干掉IE</h1><p>Kill IE6 提示的javascript代码，请自行搜索。</p><br><h1 id="换机器">换机器</h1><p>你要保留好自己的博客源码。换机器写博客，就只能使用各种网盘的同步功能，或者你把你的站点源文件提交到某代码托管服务器。另外，貌似这篇很牛逼，<a href="http://lucifr.com/2013/06/02/hexo-on-cloud-with-dropbox-and-vps/" target="_blank" rel="external">Hexo 服务器端布署及 Dropbox 同步</a>。</p><br><p>我的办法是这样的，先在一个目录下做好Node+Git+Hexo的绿色环境，写个<em>hexos.bat</em>可以一键启动hexo工作台，把整个目录用Dropbox同步，这样随便在办公室或家的任何笔记本台式机都可以写博客，也不用处理什么文件拷贝备份的事情，非常爽。</p><br><h1 id="统计功能">统计功能</h1><p><a href="http://bruce-sha.github.io/2013/12/22/count-views-of-hexo" target="_blank" rel="external">为hexo博客添加访问次数统计功能</a></p><br><h1 id="其它">其它</h1><p><strong>网站加速</strong><br><a href="http://www.webluker.com" target="_blank" rel="external">Webluker-CDN 网站加速 免费CDN DNS解析</a><br><a href="http://blog.webluker.com" target="_blank" rel="external">Webluker-FAQ索引</a></p><br><p><strong>网站监控</strong><br><a href="http://www.jiankongbao.com" target="_blank" rel="external">监控宝-网站监控 网页监控 服务器监控</a><br><a href="http://www.jiankongbao.com/faq" target="_blank" rel="external">监控宝-常见问题</a></p><br><blockquote><br><p>DNSPod本身就有D监控可用。</p><br></blockquote><br><p><strong>站长工具</strong><br><a href="http://www.google.com/intl/zh-CN/webmasters" target="_blank" rel="external">谷歌站长工具</a><br><a href="http://zhanzhang.baidu.com" target="_blank" rel="external">百度站长工具</a><br><a href="http://tool.chinaz.com" target="_blank" rel="external">站长之家工具</a><br><a href="http://zhanzhang.so.com" target="_blank" rel="external">360搜索站长平台</a><br><a href="http://webscan.360.cn" target="_blank" rel="external">360网站安全检测</a><br><a href="http://ce.cloud.360.cn/index" target="_blank" rel="external">奇云测</a><br><a href="http://jk.cloud.360.cn" target="_blank" rel="external">360云监控</a></p><br><p><strong>SEO</strong><br><a href="http://www.google.com/intl/zh-CN/webmasters/docs/search-engine-optimization-starter-guide-zh-cn.pdf" target="_blank" rel="external">谷歌搜索引擎优化初学者指南.PDF</a></p><br><p><strong>数据统计</strong><br><a href="http://busuanzi.ibruce.info" target="_blank" rel="external">不蒜子</a><br><a href="http://tongji.baidu.com" target="_blank" rel="external">百度统计</a><br><a href="http://www.google.com/analytics/web/?hl=zh-CN" target="_blank" rel="external">Google Analytics</a></p><br><p><strong>企业邮箱</strong><br><a href="http://exmail.qq.com" target="_blank" rel="external">腾讯企业邮箱</a><br><a href="http://service.exmail.qq.com/cgi-bin/help?subtype=1&amp;&amp;id=20012&amp;&amp;no=1000931" target="_blank" rel="external">在DNSPod域名解析商处如何设置企业邮箱</a></p><br><p><strong>图片生成</strong><br><a href="http://pic.sdodo.com/tool/mailpic" target="_blank" rel="external">邮箱地址生成图片</a><br><a href="http://www.makepic.com/email.php" target="_blank" rel="external">MakePic.com邮址图片生成</a></p><br><p><strong>徽章生成</strong><br><a href="http://creatr.cc/creatr" target="_blank" rel="external">Logo Creatr</a><br><a href="http://www.simwebsol.com/imagetool" target="_blank" rel="external">Web 2.0 Logo Creator</a> <em>(可能需翻墙)</em><br><!--google search web 2.0 online logo --><br><!--
+**支付宝挂件**
+<a href='http://me.alipay.com/buru'> <img src='https://img.alipay.com/sys/personalprod/style/mc/btn-index.png' /> </a>
+--></p><br><p><strong>favicon制作</strong><br><a href="http://tool.lu/favicon" target="_blank" rel="external">Favicon制作</a></p><br><p><strong>文章推荐/猜你喜欢</strong><br><a href="http://www.wumii.com/widget/relatedItems" target="_blank" rel="external">无觅关联推荐</a><br><a href="http://www.ujian.cc" target="_blank" rel="external">友荐</a><br><a href="http://www.lezhi.me" target="_blank" rel="external">乐知推荐</a><br><a href="http://tuijian.baidu.com" target="_blank" rel="external">百度推荐</a></p><br><p><strong>广告</strong><br><a href="http://union.baidu.com" target="_blank" rel="external">百度联盟</a></p><br><h1 id="不足">不足</h1><ul><br><li>配置文件缺少空格会报错</li><br><li>报错不能得到精确定位，只能靠经验</li><br><li>换台机器写文章不好处理</li><br><li>如何统计总来访数和单页文章阅读次数，请参考<a href="http://bruce-sha.github.io/2013/12/22/count-views-of-hexo" target="_blank" rel="external">为hexo博客添加访问次数统计功能</a>。</li><br></ul><br><h1 id="结束">结束</h1><p>我的博客<a href="http://bruce-sha.github.io" target="_blank" rel="external">『ibruce.info』</a>基本算是免费做出来的，为报答开源社区，特写这篇文章，由于水平有限，错误之处在所难免，请诸位多多包涵，不吝指点。</p><br><p>在此一并感谢<a href="http://github.com" target="_blank" rel="external">GitHub</a>，<a href="http://github.com/tommy351/hexo" target="_blank" rel="external">Hexo</a>，<a href="http://github.com/heroicyang/hexo-theme-modernist" target="_blank" rel="external">Modernist</a>，<a href="http://www.qiniu.com" target="_blank" rel="external">七牛</a>，<a href="http://duoshuo.com" target="_blank" rel="external">多说</a>，<a href="http://www.qq.com/404" target="_blank" rel="external">公益404</a>，<a href="http://www.godaddy.com" target="_blank" rel="external">GoDaddy</a>，<a href="http://www.dnspod.cn" target="_blank" rel="external">DNSPod</a>，<a href="http://tongji.baidu.com" target="_blank" rel="external">百度统计</a>，<a href="http://www.google.com/analytics/web/?hl=zh-CN" target="_blank" rel="external">Google Analytics</a>，以及<a href="http://nodejs.org" target="_blank" rel="external">Node.js</a>，<a href="https://code.google.com/p/msysgit" target="_blank" rel="external">MSYSGit</a>，<a href="http://www.sublimetext.com" target="_blank" rel="external">Sublime Text 2</a>，最后感谢<a href="http://xbeta.org/wiki/show/Markdown" target="_blank" rel="external">Markdown</a>。<!--，最后感谢我的老婆Jolene。--></p><br><blockquote><br><p>关于以上内容的任何问题，您都可以对 <a href="http://bruce-sha.github.io/2013/11/22/hexo-your-blog" target="_blank" rel="external">bruce</a> 留言或邮件  <strong><a href="mailto:bu.ru@qq.com" target="_blank" rel="noopener">bu.ru@qq.com</a></strong>。</p><br></blockquote><br><h1 id="ps：（2014年12月_更新）">ps：（2014年12月 更新）</h1><ol><br><li>当本地调试出现诡异现象时候，请先使用 <em>hexo clean</em> 清理已经生成的静态文件后重试。</li><br><li>GitHub官方之前发邮件给用户，已经不建议使用A记录指向静态ip了，建议CNAME指向你的GitHub Pages URL。</li><br><li>如果你申请了自己的域名，您可以使用 DNSPod+<a href="http://domain.mail.qq.com" target="_blank" rel="external">QQ域名邮箱</a> 打造自己的专属邮箱，比如我的 <strong><a href="mailto:me@ibruce.info" target="_blank" rel="noopener">me@ibruce.info</a></strong>，是不是逼格又提高了一丁点？</li><br><li>添加 Fork me on Github 彩带，请戳 <a href="http://github.com/blog/273-github-ribbons" target="_blank" rel="external">http://github.com/blog/273-github-ribbons</a> 。</li><br><li>注意看本页最下方的访问次数统计，这不是一个普通的计数器，这个计数器骨骼精奇天赋异禀，他是实时的！你打开两个浏览窗口，只刷新一个窗口另一个窗口的数字会自动实时变化的，有点意思吧？怎么做的呢，先上个图，当然，这张看板的全部内容也都是实时动态变化着的 ^<em>^</em></li><br></ol><br><p><a href="http://bruce.u.qiniudn.com/2014/12/firebase-counter.jpg" title="counter" class="fancybox" rel="noopener" target="_blank"><img src="http://bruce.u.qiniudn.com/2014/12/firebase-counter.jpg" alt="counter"></a><span class="caption">counter</span></p><br>&lt;h1 id=”ps：（2015年4月更新）”&gt;ps：（2015年4月 更新）<ol><br><li>折腾了两天，终于搞定GitHub不间断被墙导致网站无法访问的问题。方法就是GitHub作为主站，GitCafe作为备份。因为我的hexo版本很低，不得不先升级到hexo3，各种坑，不建议升级，最后自己修改主题，又是各种坑，快累尿了。</li><br><li><strong>号外号外：</strong>最新的统计服务已经开放，两行代码轻松搞定，你可以直接使用：<strong><a href="http://service.ibruce.info" target="_blank" rel="external">不蒜子</a> </strong> 微服务，本人墙裂推荐，只需要两行代码哦。各种用法实例和显示效果参考<a href="http://ibruce.info/2015/04/04/busuanzi" target="_blank" rel="noopener">不蒜子文档</a>中的实例链接。不蒜子，极客的算子，极简的算子，任你发挥的算子。</li><br></ol><br><h1 id="参考文献">参考文献</h1><ol><br><li><a href="http://zespia.tw/hexo" target="_blank" rel="external">Hexo</a></li><br><li><a href="http://www.7yeshu.com/2013/09/03/hexo" target="_blank" rel="external">使用Hexo在Github上搭建个人博客</a></li><br><li><a href="http://sys.la/2013/09/07/hexo" target="_blank" rel="external">hexo教程</a></li><br><li><a href="http://zipperary.com/2013/05/30/hexo-guide-4" target="_blank" rel="external">hexo系列教程：（四）hexo博客的优化技巧</a></li><br><li><a href="http://zipperary.com/2013/06/02/hexo-guide-5" target="_blank" rel="external">hexo系列教程：（五）hexo博客的优化技巧续</a></li><br><li><a href="http://heroicyang.com/2013/05/22/hexo-theme-modernist" target="_blank" rel="external">_折腾了个新主题</a></li><br><li><a href="http://yangjian.me/workspace/building-blog-with-hexo" target="_blank" rel="external">使用hexo搭建博客</a></li><br><li><a href="http://lucifr.com/2013/01/02/from-octopress-to-hexo" target="_blank" rel="external">从Octopress到Hexo</a></li><br><li><a href="http://blog.archean.me/2013/10/20/fulfil-with-hexo-theme" target="_blank" rel="external">搞定Hexo</a></li><br><li><a href="http://mekong.github.io/2013/06/hello-world" target="_blank" rel="external">Hello World by Hexo</a></li><br><li><a href="http://popozhu.github.io/2013/06/15/hexo%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE" target="_blank" rel="external">hexo的代码高亮 </a></li><br><li><a href="http://blog.ishgo.cn/2013/09/15/ishgohexo%E5%9B%A2%E9%98%9F%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98" target="_blank" rel="external">用Hexo快速打造静态博客_</a></li><br><li><a href="http://www.ituring.com.cn/article/6815" target="_blank" rel="external">使用Sublime Text 2 编辑Markdown</a></li><br><li><a href="http://jiabin.tk/2013/07/01/add-page-404-for-my-blog" target="_blank" rel="external">给hexo添加一个404页面</a></li><br><li><a href="http://www.worldhello.net/gotgithub/index.html" target="_blank" rel="external">GotGitHub</a></li><br><li><a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html" target="_blank" rel="external">搭建一个免费的，无限流量的Blog — github Pages和Jekyll入门</a></li><br><li><a href="https://support.dnspod.cn/Kb/showarticle/tsid/42" target="_blank" rel="external">Godaddy注册商域名修改DNS地址</a></li><br><li><a href="http://devework.com/wordpress-qiniu.html" target="_blank" rel="external">WordPress中使用七牛云存储加速图片等静态文件访问速度</a></li><br><li><a href="http://www.zhihu.com/question/19594033?group_id=121391355" target="_blank" rel="external">怎样搭建一个自有域名的WordPress博客</a></li><br><li><a href="http://lucifr.com/2013/06/02/hexo-on-cloud-with-dropbox-and-vps" target="_blank" rel="external">Hexo服务器端布署及Dropbox同步</a></li><br></ol><br><br><br>  </div><br>  <footer><br><br><br><br>  <div class="categories"><br>    <a href="/categories/default/">default</a><br>  </div><br><br><br><br>  <div class="tags"><br>    <a href="/tags/hexo/">hexo</a><br>  </div><br><br><br>    <div class="clearfix"></div><br>  </footer><br></article><br><br><br><br><!-- wumii Button BEGIN --><br><div style="margin:0px auto; padding-left:23px; text-align:center;"><br><br><br><br>    <script type="text/javascript" id="wumiiRelatedItems"></script><br>    <script type="text/javascript"><br>        var wumiiPermaLink = “<a href="http://ibruce.info/2013/11/22/hexo-your-blog/&quot;">http://ibruce.info/2013/11/22/hexo-your-blog/&quot;</a>; //请用代码生成文章永久的链接<br>        var wumiiTitle = “hexo你的博客”; //请用代码生成文章标题<br>        var wumiiTags = “hexo”; //请用代码生成文章标签，以英文逗号分隔，如：”标签1,标签2”<br>        var wumiiCategories = [“default”]; //请用代码生成文章分类，分类名放在 JSONArray 中，如: [“分类1”, “分类2”]<br>        var wumiiSitePrefix = “<a href="http://ibruce.info/&quot;">http://ibruce.info/&quot;</a>;<br>        var wumiiParams = “&amp;num=5&amp;mode=3&amp;pf=JAVASCRIPT”;<br>    </script><br>    <script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script><br>    <!--
+    <a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
+        <img src="http://static.wumii.cn/images/pixel.png" alt="无觅关联推荐，快速提升流量" style="border:0;padding:0;margin:0;" />
+    </a>
+    --><br></div><br><!-- wumii Button END --><br><br><!-- UJian Button BEGIN --><br>    <div class="ujian-hook" style="padding-left: 17px;"></div><br>    <script type="text/javascript">var ujian_config = {num:6,picSize:83,textHeight:45};</script><br>    <script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1893018"></script><br><!-- UJian Button END --><br><br><!-- baidu tuijian BEGIN --><br><!-- <div id="hm_t_22763"></div> --><br><!-- baidu tuijian BEGIN --><br><!--    <div style="padding-left: 17px;"> --><br><!--        <script src="http://wm.lrswl.com/page/s.php?s=103186&w=640&h=60"></script> --><br><!--    </div> --><br><br><br><br><section id="comment"><br>  <h1 class="title">评论</h1><br>  <div class="ds-thread" data-title="hexo你的博客"><br>  </div><br></section><br></div><br>  </div><br>  <div class="widget-wrapper"><br>    <aside id="sidebar"><br><br><br><br><br><br><br><div class="widget tag first"><br>  <h3 class="title">分类</h3><br>  <ul class="entry"><br><br>    <li><a href="/categories/algorithm/">algorithm</a><small>1</small></li><br><br>    <li><a href="/categories/big-data/">big data</a><small>1</small></li><br><br>    <li><a href="/categories/cloud/">cloud</a><small>1</small></li><br><br>    <li><a href="/categories/default/">default</a><small>8</small></li><br><br>    <li><a href="/categories/distribution/">distribution</a><small>1</small></li><br><br>    <li><a href="/categories/java/">java</a><small>10</small></li><br><br>    <li><a href="/categories/mongodb/">mongodb</a><small>1</small></li><br><br>    <li><a href="/categories/nodejs/">nodejs</a><small>1</small></li><br><br>    <li><a href="/categories/olap/">olap</a><small>1</small></li><br><br>    <li><a href="/categories/scala/">scala</a><small>6</small></li><br><br>  </ul><br></div><br><br><br><br><br><br><div class="widget tagcloud"><br>  <h3 class="title">标签云</h3><br>  <div class="entry"><br>  <!-- 
+  <a href="/tags/actor/" style="font-size: 10px;">actor</a> <a href="/tags/akka/" style="font-size: 14px;">akka</a> <a href="/tags/algorithm/" style="font-size: 10px;">algorithm</a> <a href="/tags/big-data/" style="font-size: 12px;">big data</a> <a href="/tags/concurrency/" style="font-size: 14px;">concurrency</a> <a href="/tags/cubes/" style="font-size: 10px;">cubes</a> <a href="/tags/design/" style="font-size: 10px;">design</a> <a href="/tags/ebs/" style="font-size: 10px;">ebs</a> <a href="/tags/ec2/" style="font-size: 10px;">ec2</a> <a href="/tags/eclipse/" style="font-size: 12px;">eclipse</a> <a href="/tags/event-bus/" style="font-size: 10px;">event bus</a> <a href="/tags/green/" style="font-size: 12px;">green</a> <a href="/tags/guava/" style="font-size: 12px;">guava</a> <a href="/tags/hexo/" style="font-size: 18px;">hexo</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/ipad/" style="font-size: 10px;">ipad</a> <a href="/tags/issue/" style="font-size: 10px;">issue</a> <a href="/tags/java/" style="font-size: 16px;">java</a> <a href="/tags/javascript/" style="font-size: 12px;">javascript</a> <a href="/tags/leb/" style="font-size: 10px;">leb</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/microservice/" style="font-size: 10px;">microservice</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/olap/" style="font-size: 10px;">olap</a> <a href="/tags/papa/" style="font-size: 10px;">papa</a> <a href="/tags/performance/" style="font-size: 10px;">performance</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/sbt/" style="font-size: 10px;">sbt</a> <a href="/tags/scala/" style="font-size: 20px;">scala</a> <a href="/tags/scala-ide/" style="font-size: 10px;">scala-ide</a> <a href="/tags/spray/" style="font-size: 10px;">spray</a> <a href="/tags/weixin/" style="font-size: 10px;">weixin</a> <a href="/tags/word-cloud/" style="font-size: 10px;">word cloud</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/设计模式/" style="font-size: 12px;">设计模式</a>
+  --><br>  <a href="/tags/actor/" style="font-size: 10px;">actor</a> <a href="/tags/akka/" style="font-size: 14px;">akka</a> <a href="/tags/algorithm/" style="font-size: 10px;">algorithm</a> <a href="/tags/big-data/" style="font-size: 12px;">big data</a> <a href="/tags/concurrency/" style="font-size: 14px;">concurrency</a> <a href="/tags/cubes/" style="font-size: 10px;">cubes</a> <a href="/tags/design/" style="font-size: 10px;">design</a> <a href="/tags/ebs/" style="font-size: 10px;">ebs</a> <a href="/tags/ec2/" style="font-size: 10px;">ec2</a> <a href="/tags/eclipse/" style="font-size: 12px;">eclipse</a> <a href="/tags/event-bus/" style="font-size: 10px;">event bus</a> <a href="/tags/green/" style="font-size: 12px;">green</a> <a href="/tags/guava/" style="font-size: 12px;">guava</a> <a href="/tags/hexo/" style="font-size: 18px;">hexo</a> <a href="/tags/interview/" style="font-size: 10px;">interview</a> <a href="/tags/ipad/" style="font-size: 10px;">ipad</a> <a href="/tags/issue/" style="font-size: 10px;">issue</a> <a href="/tags/java/" style="font-size: 16px;">java</a> <a href="/tags/javascript/" style="font-size: 12px;">javascript</a> <a href="/tags/leb/" style="font-size: 10px;">leb</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/microservice/" style="font-size: 10px;">microservice</a> <a href="/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/olap/" style="font-size: 10px;">olap</a> <a href="/tags/papa/" style="font-size: 10px;">papa</a> <a href="/tags/performance/" style="font-size: 10px;">performance</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/sbt/" style="font-size: 10px;">sbt</a> <a href="/tags/scala/" style="font-size: 20px;">scala</a> <a href="/tags/scala-ide/" style="font-size: 10px;">scala-ide</a> <a href="/tags/spray/" style="font-size: 10px;">spray</a> <a href="/tags/weixin/" style="font-size: 10px;">weixin</a> <a href="/tags/word-cloud/" style="font-size: 10px;">word cloud</a> <a href="/tags/zookeeper/" style="font-size: 10px;">zookeeper</a> <a href="/tags/设计模式/" style="font-size: 12px;">设计模式</a><br>  </div><br></div><br><br><br><br><br><br><div class="widget recent-posts"><br>  <h3 class="title">最新文章</h3><br>  <ul class="entry"><br><br>      <li><br>        <a href="/2015/04/04/busuanzi/">不蒜子</a><br>      </li><br><br>      <li><br>        <a href="/2015/03/03/mongodb3-auth/">mongoDB 3.0 安全权限访问控制</a><br>      </li><br><br>      <li><br>        <a href="/2014/12/02/hello-colossus/">微服务框架 Colossus</a><br>      </li><br><br>      <li><br>        <a href="/2014/10/23/zookeeper/">ZooKeeper 简介</a><br>      </li><br><br>      <li><br>        <a href="/2014/05/20/hello-akka/">Akka 快速入门</a><br>      </li><br><br>      <li><br>        <a href="/2014/04/16/a-small-point-of-interface-design/">对接口设计的一个小看法</a><br>      </li><br><br>      <li><br>        <a href="/2014/04/06/hello-spray/">通过 Spray 创建简单的 Restful Http Server</a><br>      </li><br><br>      <li><br>        <a href="/2014/02/28/turning-point-2014/">转折点</a><br>      </li><br><br>      <li><br>        <a href="/2014/02/14/caipus/">微菜谱</a><br>      </li><br><br>      <li><br>        <a href="/2014/02/10/the-most-beautiful-word-cloud/">简单美观的文字标签云组件</a><br>      </li><br><br>  </ul><br></div><br><br><br><br></aside><br><div class="clearfix"></div><br>  </div><br>  <footer id="footer"><div class="theme-copyright"><br> © 2013 - 2017 <a href="/">bruce</a><br> |<br> produce by <a href="http://bruce-sha.github.io" target="_blank">sha</a><br> |<br> <!--
+ <font id="counter"></font>
+ --><br> <span id="busuanzi_container_site_pv" style="display: inline;">本站总访问量 <a href="//busuanzi.ibruce.info" target="_blank"><span id="busuanzi_value_site_pv">810645</span></a></span> 次<br> </div><br><!--
+<div class="copyright">
+ <font id="counter"></font>
+ 版权所有
+
+  &copy; 2013-2017 <a href="/">bruce</a>
+
+</div>
+<div class="theme-copyright">
+  Theme by <a href="http://heroicyang.com" target="_blank">Heroic Yang</a>
+   | 
+  Redesign by <a href="http://bruce-sha.github.io" target="_blank">Bruce Sha</a>
+</div>
+--><br><div class="clearfix"></div><br><br><!--
+<script src="//buru.u.qiniudn.com/firebase-2.0.5.js"></script>
+<script src="/js/counter.js"></script>
+--><br><script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script></footer><br>  <script src="/js/scale.fix.js"></script><br><script src="/js/jquery.imagesloaded.min.js"></script><br><script src="/js/gallery.js"></script><br><br><br><script type="text/javascript"><br>  var duoshuoQuery = { short_name: ‘buru’ };<br>  (function() {<br>    var ds = document.createElement(‘script’);<br>    ds.type = ‘text/javascript’;<br>    ds.async = true;<br>    ds.src = ‘<a href="http://static.duoshuo.com/embed.js&#39;">http://static.duoshuo.com/embed.js&#39;</a>;<br>    ds.charset = ‘UTF-8’;<br>    (document.getElementsByTagName(‘head’)[0] || document.getElementsByTagName(‘body’)[0]).appendChild(ds);<br>  })();<br></script><br><br><br><br><link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css"><br><script src="/fancybox/jquery.fancybox.pack.js"></script><br><script type="text/javascript"><br>  (function($){<br>    $(‘.fancybox’).fancybox();<br>  })(jQuery);<br></script><br><br><br></body>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/17/example/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/17/example-2/" rel="prev" title="example">
+                example <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Zhsp</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">不如</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">hexo你的博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境准备"><span class="nav-number">3.</span> <span class="nav-text">环境准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub"><span class="nav-number">4.</span> <span class="nav-text">GitHub</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">5.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初始化"><span class="nav-number">6.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#生成静态页面"><span class="nav-number">7.</span> <span class="nav-text">生成静态页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#本地启动"><span class="nav-number">8.</span> <span class="nav-text">本地启动</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写文章"><span class="nav-number">9.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主题安装"><span class="nav-number">10.</span> <span class="nav-text">主题安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#评论框"><span class="nav-number">11.</span> <span class="nav-text">评论框</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义页面"><span class="nav-number">12.</span> <span class="nav-text">自定义页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#404页面"><span class="nav-number">13.</span> <span class="nav-text">404页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#图床"><span class="nav-number">14.</span> <span class="nav-text">图床</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#申请域名（可选）"><span class="nav-number">15.</span> <span class="nav-text">申请域名（可选）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命令"><span class="nav-number">16.</span> <span class="nav-text">命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="###至此，基本操作介绍完毕，以下内容普通用户无需了解。"><span class="nav-number">16.1.</span> <span class="nav-text">##至此，基本操作介绍完毕，以下内容普通用户无需了解。</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#目录介绍"><span class="nav-number">17.</span> <span class="nav-text">目录介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#修改局部页面"><span class="nav-number">18.</span> <span class="nav-text">修改局部页面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#统计"><span class="nav-number">19.</span> <span class="nav-text">统计</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分享"><span class="nav-number">20.</span> <span class="nav-text">分享</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#网站图标"><span class="nav-number">21.</span> <span class="nav-text">网站图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#自定义挂件"><span class="nav-number">22.</span> <span class="nav-text">自定义挂件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#插件"><span class="nav-number">23.</span> <span class="nav-text">插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#迁移"><span class="nav-number">24.</span> <span class="nav-text">迁移</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搜索引擎"><span class="nav-number">25.</span> <span class="nav-text">搜索引擎</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更新"><span class="nav-number">26.</span> <span class="nav-text">更新</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#干掉IE"><span class="nav-number">27.</span> <span class="nav-text">干掉IE</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#换机器"><span class="nav-number">28.</span> <span class="nav-text">换机器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#统计功能"><span class="nav-number">29.</span> <span class="nav-text">统计功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其它"><span class="nav-number">30.</span> <span class="nav-text">其它</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#不足"><span class="nav-number">31.</span> <span class="nav-text">不足</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#结束"><span class="nav-number">32.</span> <span class="nav-text">结束</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ps：（2014年12月_更新）"><span class="nav-number">33.</span> <span class="nav-text">ps：（2014年12月 更新）</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文献"><span class="nav-number">34.</span> <span class="nav-text">参考文献</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">35.</span> <span class="nav-text">评论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">35.0.1.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">35.0.2.</span> <span class="nav-text">标签云</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">35.0.3.</span> <span class="nav-text">最新文章</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zhsp</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
