@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3c7d7e;
+  background: #ffdac3;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3141,4 +3141,13 @@ body {
 .site-meta {
   background: #9e0808;
   opacity: 0.99;
+}
+.local-search-pop-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2080;
+  background-color: rgba(0,0,0,0.3);
 }
