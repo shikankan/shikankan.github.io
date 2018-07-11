@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a333b9;
+  background: #b5a1ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2777,6 +2777,7 @@ pre .javascript .function {
     position: relative;
     width: auto;
     border-radius: initial;
+    opacity: 0.85;
   }
 }
 .main:before,
@@ -2834,6 +2835,7 @@ pre .javascript .function {
     padding: 20px;
     min-height: auto;
     border-radius: initial;
+    opacity: 0.85;
   }
 }
 .sidebar {
@@ -2853,6 +2855,7 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .sidebar {
     display: none;
+    opacity: 0.85;
   }
 }
 .sidebar-toggle {
