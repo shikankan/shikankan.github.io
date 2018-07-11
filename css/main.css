@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2926e8;
+  background: #a333b9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2747,7 +2747,6 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .header {
     width: auto;
-    opacity: 0.55;
   }
 }
 .header-inner {
@@ -2778,7 +2777,6 @@ pre .javascript .function {
     position: relative;
     width: auto;
     border-radius: initial;
-    opacity: 0.55;
   }
 }
 .main:before,
@@ -2797,7 +2795,6 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .main {
     padding-bottom: 100px;
-    opacity: 0.55;
   }
 }
 .container .main-inner {
@@ -2811,7 +2808,6 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .container .main-inner {
     width: auto;
-    opacity: 0.55;
   }
 }
 .content-wrap {
@@ -2838,7 +2834,6 @@ pre .javascript .function {
     padding: 20px;
     min-height: auto;
     border-radius: initial;
-    opacity: 0.55;
   }
 }
 .sidebar {
@@ -2858,7 +2853,6 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .sidebar {
     display: none;
-    opacity: 0.55;
   }
 }
 .sidebar-toggle {
@@ -2880,7 +2874,6 @@ pre .javascript .function {
     width: auto;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    opacity: 0.55;
   }
 }
 .sidebar-position-right .header-inner {
