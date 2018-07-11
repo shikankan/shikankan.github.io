@@ -185,7 +185,7 @@ th {
 }
 body {
   position: relative;
-  font-family: '书体坊米芾体', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'HAKUYOLiuTi3500', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 14px;
   line-height: 2;
   color: #555;
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: '叶根友毛笔行书', '书体坊米芾体', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: '叶根友毛笔行书', 'HAKUYOLiuTi3500', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 h2,
 h3,
@@ -1131,7 +1131,7 @@ pre .javascript .function {
   line-height: 36px;
   font-size: 24px;
   font-weight: normal;
-  font-family: 'MingLiU', '书体坊米芾体', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'MingLiU', 'HAKUYOLiuTi3500', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -1220,7 +1220,7 @@ pre .javascript .function {
   opacity: 0;
 }
 .post-body {
-  font-family: '书体坊米芾体', '书体坊米芾体', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: '薛文轩钢笔楷体', 'HAKUYOLiuTi3500', "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1498,7 +1498,7 @@ pre .javascript .function {
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
   color: #999;
-  font-family: '书体坊米芾体', '书体坊米芾体', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: '薛文轩钢笔楷体', 'HAKUYOLiuTi3500', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 12px;
   text-align: center;
 }
@@ -1961,7 +1961,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff8b46;
+  background: #8a301c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2747,6 +2747,7 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .header {
     width: auto;
+    opacity: 0.55;
   }
 }
 .header-inner {
@@ -2754,7 +2755,7 @@ pre .javascript .function {
   top: 0;
   overflow: hidden;
   padding: 0;
-  opacity: 0.75;
+  opacity: 0.85;
   width: 240px;
   background: #fff;
   box-shadow: initial;
@@ -2777,6 +2778,7 @@ pre .javascript .function {
     position: relative;
     width: auto;
     border-radius: initial;
+    opacity: 0.55;
   }
 }
 .main:before,
@@ -2795,6 +2797,7 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .main {
     padding-bottom: 100px;
+    opacity: 0.55;
   }
 }
 .container .main-inner {
@@ -2808,6 +2811,7 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .container .main-inner {
     width: auto;
+    opacity: 0.55;
   }
 }
 .content-wrap {
@@ -2816,6 +2820,7 @@ pre .javascript .function {
   padding: 40px;
   width: 700px;
   background: #fff;
+  opacity: 0.85;
   min-height: 700px;
   box-shadow: initial;
   border-radius: initial;
@@ -2833,6 +2838,7 @@ pre .javascript .function {
     padding: 20px;
     min-height: auto;
     border-radius: initial;
+    opacity: 0.55;
   }
 }
 .sidebar {
@@ -2842,6 +2848,7 @@ pre .javascript .function {
   width: 240px;
   background: #f5f7f9;
   box-shadow: none;
+  opacity: 0.85;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar {
@@ -2851,6 +2858,7 @@ pre .javascript .function {
 @media (max-width: 767px) {
   .sidebar {
     display: none;
+    opacity: 0.55;
   }
 }
 .sidebar-toggle {
@@ -2872,6 +2880,7 @@ pre .javascript .function {
     width: auto;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    opacity: 0.55;
   }
 }
 .sidebar-position-right .header-inner {
@@ -3133,10 +3142,7 @@ pre .javascript .function {
 body {
   background: url("/images/background/image1.jpeg");
 }
-.main-inner {
-  opacity: 0.85;
-}
 .site-meta {
-  background: #c00;
+  background: #9e0808;
   opacity: 0.99;
 }
