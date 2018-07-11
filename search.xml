@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[markdown简单语法]]></title>
+    <url>%2F2018%2F07%2F08%2Fmarkdown%E7%AE%80%E5%8D%95%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[#1.斜体和粗体 斜体或_斜体_粗体加粗斜体 &lt;|– more –&gt; 删除线在这里由于未知原因不能预览 #2. 分级标题 ##第一种写法： 这是一个一级标题这是一个二级标题##第二种写法： 一级标题二级标题三级标题四级标题五级标题六级标题#3. 超链接 ##3.1. 行内式 ##这是代码格式 #include &lt;stdio.h&gt; int main() { printf(&quot;this is ok!&quot;); int a,b; class person { int a; } }]]></content>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[我的博客]]></title>
+    <url>%2F2018%2F07%2F08%2F%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[说明欢迎来到我的博客 出于爱好我搭建了这个blog,后续会完善一些内容。这虽然不是一个娱乐blog，但一样值得一看。]]></content>
+      <categories>
+        <category>示例</category>
+      </categories>
+      <tags>
+        <tag>导航</tag>
+        <tag>分享</tag>
+      </tags>
+  </entry>
+</search>
