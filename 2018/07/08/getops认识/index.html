@@ -118,7 +118,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="导航,分享," />
 
 
 
@@ -129,13 +129,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Zhsp">
-<meta property="og:url" content="http://shikankan.github.io/tags/分享/index.html">
+<meta name="description" content="#[转载]Linux下getopt()函数的简单使用最近在弄Linux C编程，本科的时候没好好学啊，希望学弟学妹们引以为鉴。 好了，虽然啰嗦了点，但确实是忠告。步入正题: 我们的主角—-getopt()函数。 英雄不问出处，getopt()函数的出处就是unistd.h头文件（哈哈）,写代码的时候千万不要忘记把他老人家include上。再来看一下这家伙的原型（不是六耳猕猴）： int getop">
+<meta name="keywords" content="导航,分享">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的博客">
+<meta property="og:url" content="http://shikankan.github.io/2018/07/08/getops认识/index.html">
 <meta property="og:site_name" content="Zhsp">
+<meta property="og:description" content="#[转载]Linux下getopt()函数的简单使用最近在弄Linux C编程，本科的时候没好好学啊，希望学弟学妹们引以为鉴。 好了，虽然啰嗦了点，但确实是忠告。步入正题: 我们的主角—-getopt()函数。 英雄不问出处，getopt()函数的出处就是unistd.h头文件（哈哈）,写代码的时候千万不要忘记把他老人家include上。再来看一下这家伙的原型（不是六耳猕猴）： int getop">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-07-19T16:04:48.136Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhsp">
+<meta name="twitter:title" content="我的博客">
+<meta name="twitter:description" content="#[转载]Linux下getopt()函数的简单使用最近在弄Linux C编程，本科的时候没好好学啊，希望学弟学妹们引以为鉴。 好了，虽然啰嗦了点，但确实是忠告。步入正题: 我们的主角—-getopt()函数。 英雄不问出处，getopt()函数的出处就是unistd.h头文件（哈哈）,写代码的时候千万不要忘记把他老人家include上。再来看一下这家伙的原型（不是六耳猕猴）： int getop">
 
 
 
@@ -165,13 +170,13 @@
 
 
 
-  <link rel="canonical" href="http://shikankan.github.io/tags/分享/"/>
+  <link rel="canonical" href="http://shikankan.github.io/2018/07/08/getops认识/"/>
 
 
 
 
 
-  <title>标签: 分享 | Zhsp</title>
+  <title>我的博客 | Zhsp</title>
   
 
 
@@ -195,7 +200,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 <a href="https://github.com/shikankan" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -323,82 +328,440 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>分享<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://shikankan.github.io/2018/07/08/getops认识/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhsp">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head/pic5.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhsp">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/07/08/getops认识/" itemprop="url">
-              
-                <span itemprop="name">我的博客</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">我的博客</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-08T13:08:02+08:00"
-              content="2018-07-08" >
-          07-08
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-08T13:08:02+08:00">
+                2018-07-08
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/示例/" itemprop="url" rel="index">
+                    <span itemprop="name">示例</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/07/08/getops认识/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/08/getops认识/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本站总阅读数<i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,186
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  9
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>#[转载]Linux下getopt()函数的简单使用<br>最近在弄Linux C编程，本科的时候没好好学啊，希望学弟学妹们引以为鉴。</p>
+<p>好了，虽然啰嗦了点，但确实是忠告。步入正题:</p>
+<p>我们的主角—-getopt()函数。</p>
+<p>英雄不问出处，getopt()函数的出处就是unistd.h头文件（哈哈）,写代码的时候千万不要忘记把他老人家include上。<br>再来看一下这家伙的原型（不是六耳猕猴）：</p>
+<p>int getopt(int argc,char <em> const argv[ ],const char </em> optstring);</p>
+<p>前两个参数大家不会陌生，没错，就是老大main函数的两个参数！老大传进来的参数自然要有人接着！</p>
+<p>第三个参数是个字符串，看名字，我们可以叫他选项字符串（后面会说明）</p>
+<p>返回值为int类型，我们都知道char类型是可以转换成int类型的，每个字符都有他所对应的整型值，其实这个返回值返回的就是一个字符，什么字符呢，叫选项字符（姑且这么叫吧，后面会进一步说明）</p>
+<p>简单了解了出身和原型，下面我们看看这家伙到底有什么本事吧！</p>
+<p>(⊙o⊙)…在此之前还要介绍他的几个兄弟~~~~呃呃呃</p>
+<p>小弟1、extern char* optarg;</p>
+<p>小弟2、extern int optind;</p>
+<p>小弟3、extern int opterr;</p>
+<p>小弟4、extern int optopt;</p>
+<p>队形排的不错。小弟1是用来保存选项的参数的（先混个脸熟，后面有例子）；小弟2用来记录下一个检索位置；小弟3表示的是是否将错误信息输出到stderr，为0时表示不输出，小弟4表示不在选项字符串optstring中的选项（有点乱哈，后面会有例子）</p>
+<p>开始逐渐解释上面遗留的问题。</p>
+<p>问题1：选项到底是个什么鬼？</p>
+<p>在linux下大家都用过这样一条指令吧：gcc helloworld.c -o helloworld.out; 这条指令中的-o就是命令行的选项，而后面的helloworld.out就是-o选项所携带的参数。当然熟悉shell指令的人都知道（虽然我并不熟悉）,有些选项是不用带参数的，而这样不带参数的选项可以写在一起（这一点在后面的例子中会用到，希望理解），比如说有两个选项-c和-d，这两个选项都不带参数（而且明显是好基友）,那么他们是可以写在一起，写成-cd的。实际的例子：当我们删除一个文件夹时可以使用指令 rm 目录名 -rf，本来-r表示递归删除，就是删除文件夹中所有的东西，-f表示不提示就立刻删除，他们两个都不带参数，这时他们就可以写在一起。</p>
+<p>问题2:选项字符串又是何方神圣？</p>
+<p>还是看个例子吧</p>
+<p>“a:b:cd::e”，这就是一个选项字符串。对应到命令行就是-a ,-b ,-c ,-d, -e 。冒号又是什么呢？ 冒号表示参数，一个冒号就表示这个选项后面必须带有参数（没有带参数会报错哦），但是这个参数可以和选项连在一起写，也可以用空格隔开，比如-a123 和-a   123（中间有空格） 都表示123是-a的参数；两个冒号的就表示这个选项的参数是可选的，即可以有参数，也可以没有参数，但要注意有参数时，参数与选项之间不能有空格（有空格会报错的哦），这一点和一个冒号时是有区别的。</p>
+<p>好了，先给个代码，然后再解释吧。</p>
+<pre><code>#include &lt;unistd.h&gt;
+#include &lt;stdio.h&gt;
+int main(int argc, char * argv[])
+{
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/07/08/我的博客/" itemprop="url">
-              
-                <span itemprop="name">我的博客</span>
-              
-            </a>
-        
-      </h2>
+int ch;
+printf(&quot;\n\n&quot;);
+printf(&quot;optind:%d，opterr：%d\n&quot;,optind,opterr);
+printf(&quot;--------------------------\n&quot;);
+   while ((ch = getopt(argc, argv, &quot;ab:c:de::&quot;)) != -1)
+   {
+    printf(&quot;optind: %d\n&quot;, optind);
+       switch (ch) 
+    {
+           case &apos;a&apos;:
+                   printf(&quot;HAVE option: -a\n\n&quot;);   
+                   break;
+           case &apos;b&apos;:
+                   printf(&quot;HAVE option: -b\n&quot;); 
+                   printf(&quot;The argument of -b is %s\n\n&quot;, optarg);
+                   break;
+           case &apos;c&apos;:
+                   printf(&quot;HAVE option: -c\n&quot;);
+                   printf(&quot;The argument of -c is %s\n\n&quot;, optarg);
+                   break;
+           case &apos;d&apos;:
+               printf(&quot;HAVE option: -d\n&quot;);
+                 break;
+          case &apos;e&apos;:
+                printf(&quot;HAVE option: -e\n&quot;);
+                printf(&quot;The argument of -e is %s\n\n&quot;, optarg);
+              break;
+          case &apos;?&apos;:
+                   printf(&quot;Unknown option: %c\n&quot;,(char)optopt);
+                   break;
+           }
+   }
+</code></pre><p>}</p>
+<p>编译后命令行执行：# ./main -b “qing er”</p>
+<p>输出结果为：<br><br>optind:1，<br><br>opterr：1<br><br>optind: 3<br><br>HAVE option: -b<br><br>The argument of -b is qing er<br></p>
+<p>我们可以看到：optind和opterr的初始值都为1，前面提到过opterr非零表示产生的错误要输出到stderr上。那么optind的初值为什么是1呢？</p>
+<p>这就要涉及到main函数的那两个参数了，argc表示参数的个数，argv[]表示每个参数字符串，对于上面的输出argc就为3，argv[]分别为： ./main 和 -b 和”qing er” ，实际上真正的参数是用第二个-b 开始，也就是argv[1],所以optind的初始值为1；</p>
+<p>当执行getopt（）函数时，会依次扫描每一个命令行参数（从下标1开始）,第一个-b,是一个选项，而且这个选项在选项字符串optstring中有，我们看到b后面有冒号，也就是b后面必须带有参数，而”qing er”就是他的参数。所以这个命令行是符合要求的。至于执行后optind为什么是3，这是因为optind是下一次进行选项搜索的开始索引，也是说下一次getopt（）函数要从argv[3]开始搜索。当然，这个例子argv[3]已经没有了，此时getopt（）函数就会返回-1。</p>
+<p>再看一个输入：</p>
+<p> ./main -b “qing er” -c1234</p>
+<p>输出结果为：</p>
+<p>optind:1，opterr：1 <br></p>
+<p>optind: 3<br><br>HAVE option: -b<br><br>The argument of -b is qing er<br></p>
+<p>optind: 4<br><br>HAVE option: -c<br><br>The argument of -c is 1234<br><br></p>
+<p>对于这个过程会调用三次getopt（）函数，和第一个输入一样，是找到选项-b和他的参数”qing er”,这时optind的值为3，也就意味着，下一次的getopt（）要从argv[3]开始搜索，所以第二次调用getopt()函数，找到选项-c和他的参数1234（选项和参数是连在一起的），由于-c1234写在一起，所以他两占一起占用argv[3]，所以下次搜索从argv[4]开始，而argv[4]为空，这样第三次调用getopt()函数就会返回-1，循环随之结束。</p>
+<p>接下来我们看一个错误的命令行输入: ./main -z 123</p>
+<p>输出为：</p>
+<p>optind:1，opterr：1</p>
+<p>./main: invalid option – ‘z’<br><br>optind: 2<br><br>Unknown option: z</p>
+<p>其中./main: invalid option – ‘z’就是输出到stderr的错误输出。如果把opterr设置为0那么就不会有这条输出。</p>
+<p>在看一个错误的命令行输入： ./main -zheng</p>
+<p>optind:1，opterr：1 <br><br>./main: invalid option – ‘z’ <br><br>optind: 1 <br><br>Unknown option: z <br><br>./main: invalid option – ‘h’ <br><br>optind: 1 <br><br>Unknown option: h <br><br>optind: 2 <br><br>HAVE option: -e <br><br>The argument of -e is ng <br></p>
+<p>前面提到过不带参数的选项可以写在一起，所以当getopt()找到-z的时候，发现在optstring 中没有，这时候他就认为h也是一个选项，也就是-h和-z写在一起了，依次类推，直到找到-e，发现optstring中有。</p>
+<p>最后要说明一下，getopt（）会改变argv[]中参数的顺序。经过多次getopt（）后，argv[]中的选项和选项的参数会被放置在数组前面，而optind 会指向第一个非选项和参数的位置。看例子</p>
+<pre><code>#include &lt;unistd.h&gt;
+#include &lt;stdio.h&gt;
+int main(int argc, char * argv[])
+{
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-08T13:08:02+08:00"
-              content="2018-07-08" >
-          07-08
-        </time>
-      </div>
+int i;
+printf(&quot;--------------------------\n&quot;);
+for(i=0;i&lt;argc;i++)
+{
+    printf(&quot;%s\n&quot;,argv[i]);
+}
+printf(&quot;--------------------------\n&quot;);
+   //int aflag=0, bflag=0, cflag=0;
 
-    </header>
-  </article>
+   int ch;
+printf(&quot;\n\n&quot;);
+printf(&quot;optind:%d，opterr：%d\n&quot;,optind,opterr);
+printf(&quot;--------------------------\n&quot;);
+   while ((ch = getopt(argc, argv, &quot;ab:c:de::&quot;)) != -1)
+   {
+    printf(&quot;optind: %d\n&quot;, optind);
+       switch (ch) 
+    {
+           case &apos;a&apos;:
+                   printf(&quot;HAVE option: -a\n\n&quot;);   
+                   break;
+           case &apos;b&apos;:
+                   printf(&quot;HAVE option: -b\n&quot;); 
+                   printf(&quot;The argument of -b is %s\n\n&quot;, optarg);
+                   break;
+           case &apos;c&apos;:
+                   printf(&quot;HAVE option: -c\n&quot;);
+                   printf(&quot;The argument of -c is %s\n\n&quot;, optarg);
+                   break;
+           case &apos;d&apos;:
+               printf(&quot;HAVE option: -d\n&quot;);
+                 break;
+          case &apos;e&apos;:
+                printf(&quot;HAVE option: -e\n&quot;);
+                printf(&quot;The argument of -e is %s\n\n&quot;, optarg);
+              break;
+          case &apos;?&apos;:
+                   printf(&quot;Unknown option: %c\n&quot;,(char)optopt);
+                   break;
+           }
+   }
 
+   printf(&quot;----------------------------\n&quot;);
+  printf(&quot;optind=%d,argv[%d]=%s\n&quot;,optind,optind,argv[optind]);
+
+printf(&quot;--------------------------\n&quot;);
+for(i=0;i&lt;argc;i++)
+{
+    printf(&quot;%s\n&quot;,argv[i]);
+}
+printf(&quot;--------------------------\n&quot;);
+</code></pre><p>}<br>复制代码</p>
+<p> 命令行：./main zheng -b “qing er” han -c123 qing</p>
+<p>输出结果为：</p>
+<hr>
+<p>./main <br><br>zheng <br><br>-b  <br><br>qing er <br><br>han <br><br>-c123 <br><br>qing</p>
+<p>optind:1，opterr：1 </p>
+<p>optind: 4 <br><br>HAVE option: -b <br><br>The argument of -b is qing er <br></p>
+<p>optind: 6<br><br>HAVE option: -c<br><br>The argument of -c is 123<br></p>
+<p>optind=4,argv[4]=zheng<br></p>
+<p>./main<br><br>-b<br><br>qing er<br><br>-c123<br><br>zheng<br><br>han<br><br>qing<br></p>
+<p>可以看到最开始argv[]内容为：</p>
+<p>./main<br><br>zheng<br>-b<br>qing er<br>han<br>-c123<br>qing</p>
+<p>在执行了多次getopt后变成了</p>
+<p>./main<br>-b<br>qing er<br>-c123<br>zheng<br>han<br>qing</p>
+<p>我们看到，被getopt挑出的选项和对应的参数都按顺序放在了数组的前面，而那些既不是选项又不是参数的会按顺序放在后面。而此时optind为4，即指向第一个非选项也非选项的参数，zheng</p>
+<p>##[注释]转载自<a href="https://www.cnblogs.com/qingergege/p/5914218.html" target="_blank" rel="noopener">青儿哥哥</a>的博客园</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>鼓励作者</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/pay/weixin.jpg" alt="Zhsp 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/pay/zhifubao.jpg" alt="Zhsp 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/导航/" rel="tag"><i class="fas fa-bookmark"></i> 导航</a>
+          
+            <a href="/tags/分享/" rel="tag"><i class="fas fa-bookmark"></i> 分享</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/08/我的博客/" rel="next" title="我的博客">
+                <i class="fa fa-chevron-left"></i> 我的博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/07/08/markdown简单语法/" rel="prev" title="markdown简单语法">
+                markdown简单语法 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        
+  <div class="bdsharebuttonbox">
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+    <a href="#" class="bds_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+    <a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+    <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+    <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+    <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+    <a href="#" class="bds_more" data-cmd="more"></a>
+    <a class="bds_count" data-cmd="count"></a>
+  </div>
+  <script>
+    window._bd_share_config = {
+      "common": {
+        "bdText": "",
+        "bdMini": "2",
+        "bdMiniList": false,
+        "bdPic": ""
+      },
+      "share": {
+        "bdSize": "16",
+        "bdStyle": "0"
+      },
+      "image": {
+        "viewList": ["tsina", "douban", "sqq", "qzone", "weixin", "twi", "fbook"],
+        "viewText": "分享到：",
+        "viewSize": "16"
+      }
+    }
+  </script>
+
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -406,6 +769,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -686,6 +1056,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
